@@ -81,12 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Customer Manager
+                    @lang('changeLanguage.Customer Manager')
                 </div>
 
                 <div class="links">
-                    <a href={{route('cities.index')}}>Danh sách Thành phố</a>
-                    <a href={{route('customers.index')}}>Danh sách khách hàng</a>
+                    <a href={{route('cities.index')}}>{!! __('changeLanguage.Cities List')!!}</a>
+                    <a href={{route('customers.index')}}>{!! __('changeLanguage.Customers List') !!}</a>
                 </div>
             </div>
         </div>

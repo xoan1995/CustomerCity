@@ -5,14 +5,14 @@
         <thead>
         <tr>
             <th scope="col">STT</th>
-            <th scope="col">Name City</th>
-            <th scope="col">Customers Number</th>
+            <th scope="col">Name  City</th>
+            <th scope="col">Customer  Number</th>
             <th scope="col">Action</th>
         </tr>
         </thead>
         @if(count($cities)==0)
             <tr>
-                <td colspan="4">Không có dữ liệu</td>
+                <td colspan="4">No data</td>
             </tr>
         @else
             @foreach($cities as $key => $city)
@@ -34,4 +34,5 @@
         @endif
     </table>
     <a class="btn btn-primary" href="{{route('cities.create')}}">Creat</a>
+    <a href="{{route('homeIndex')}}" class="btn btn-primary">Back</a>
 @endsection

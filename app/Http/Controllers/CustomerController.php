@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use App\City;
 use App\Customer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class CustomerController extends Controller
 {
     public function index()
     {
-        $customers = Customer::all();
+        $customers = Customer::paginate(3);
         $cities = City::all();
         return view('customers.list', compact('customers', 'cities'));
     }
@@ -27,6 +28,7 @@ class CustomerController extends Controller
         $customer = new Customer();
         $customer->name = $request->name;
         $customer->dob = $request->dob;
+        $customer->phone = $request->phone;
         $customer->email = $request->email;
         $customer->city_id = $request->city_id;
         $customer->save();
@@ -48,6 +50,7 @@ class CustomerController extends Controller
         $customer = Customer::findOrFail($id);
         $customer->name = $request->name;
         $customer->dob = $request->dob;
+        $customer->phone = $request->phone;
         $customer->email = $request->email;
         $customer->city_id = $request->city_id;
         $customer->save();
@@ -69,21 +72,26 @@ class CustomerController extends Controller
         return redirect()->route('customers.index');
     }
 
-    public function filerById(Request $request)
+//    public function customersCity($id)
+//    {
+//        $city = City::findOrFail($id);
+//        $customers = $city->customers;
+//        return view('customers.city', compact('customers'));
+//    }
+
+    public function searchCustomerRequest(Request $request)
     {
-        $idCity = $request->city_id;
-
-        //Kiem tra city co ton tai khong
-        $cityFiler = City::findOrFail($idCity);
-
-        //lay ra tat ca customer tu cityId
-        $customers = Customer::where('city_id', $cityFiler->id)->get();
-        $totalCustomerFiler = count($customers);
-        $cities = City::all();
-
-        return view('customers.list', compact('customers', 'cities', 'totalCustomerFiler', 'cityFiler'));
+        $keyword = $request->input('keyword');
+        if (!$keyword) {
+            return redirect()->route('customers.index');
+        }
+        $customers = Customer::Where('NAME', 'LIKE', '%' . $keyword . '%')->simplePaginate(15);
+        $city = City::all();
+        return view('customers.list', compact('customers', 'city'));
     }
 
-
-
+    public function homeIndex()
+    {
+        return view('welcome');
+    }
 }

@@ -12,6 +12,7 @@
                     <th scope="col">STT</th>
                     <th scope="col">Tên khách hàng</th>
                     <th scope="col">Ngày sinh</th>
+                    <th scope="col">Số điện thoại</th>
                     <th scope="col">Email</th>
                 </tr>
                 </thead>
@@ -26,6 +27,7 @@
                             <th scope="row">{{++$key}}</th>
                             <td>{{$customer->name}}</td>
                             <td>{{$customer->dob}}</td>
+                            <td>{{$customer->phone}}</td>
                             <td>{{$customer->email}}</td>
                             <td>
                                 <a href="{{route('customers.edit',$customer->id)}}">Sửa</a>

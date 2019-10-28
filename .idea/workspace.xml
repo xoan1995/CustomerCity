@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f896be7-4753-46dd-bbe8-47082107fc3e" name="Default Changelist" comment="" />
+    <list default="true" id="3f896be7-4753-46dd-bbe8-47082107fc3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/changeLanguage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/vi/changeLanguage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/customers-city-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/customers-city-manager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_04_100637_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_09_015459_creat_customers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CustomersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CustomersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cities/customers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cities/customers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cities/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cities/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customers/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customers/read.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/read.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -97,12 +129,15 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1QMrmkwMdvdKVpss8GjlbOCy22G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -137,11 +172,61 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567591467871</updated>
-      <workItem from="1567591470391" duration="27719000" />
+      <workItem from="1567591470391" duration="28307000" />
+      <workItem from="1567669031078" duration="1530000" />
+      <workItem from="1567955244901" duration="6351000" />
+      <workItem from="1567991682851" duration="6801000" />
+      <workItem from="1568017695423" duration="1679000" />
+      <workItem from="1568021289529" duration="2521000" />
+      <workItem from="1568036064413" duration="499000" />
+      <workItem from="1568100928423" duration="663000" />
+      <workItem from="1568102472024" duration="7599000" />
+      <workItem from="1568187557083" duration="989000" />
+      <workItem from="1568192395715" duration="92000" />
+      <workItem from="1568195524744" duration="614000" />
+      <workItem from="1568250290767" duration="358000" />
+      <workItem from="1568250845192" duration="1183000" />
+      <workItem from="1568255561264" duration="120000" />
+      <workItem from="1568271148209" duration="562000" />
+      <workItem from="1568345258719" duration="3975000" />
+      <workItem from="1568356045921" duration="638000" />
+      <workItem from="1568465008093" duration="601000" />
+      <workItem from="1568507375391" duration="38000" />
+      <workItem from="1569991890662" duration="417000" />
+      <workItem from="1570097065845" duration="3292000" />
+      <workItem from="1570164601147" duration="199000" />
+      <workItem from="1570165410293" duration="1517000" />
+      <workItem from="1570171273246" duration="1508000" />
+      <workItem from="1570366288291" duration="659000" />
+      <workItem from="1570377812079" duration="952000" />
+      <workItem from="1570421495677" duration="1257000" />
+      <workItem from="1570437614007" duration="1321000" />
+      <workItem from="1571722197897" duration="1741000" />
+      <workItem from="1571724585948" duration="1453000" />
+      <workItem from="1571825633537" duration="1051000" />
+      <workItem from="1571880285207" duration="1623000" />
+      <workItem from="1571882367022" duration="680000" />
+      <workItem from="1571919547605" duration="542000" />
+      <workItem from="1572195923536" duration="1014000" />
+      <workItem from="1572225560502" duration="808000" />
+      <workItem from="1572247973457" duration="1732000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

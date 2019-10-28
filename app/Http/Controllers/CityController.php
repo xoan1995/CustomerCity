@@ -61,4 +61,7 @@ class CityController extends Controller
         $customers=$city->customers;
         return view('cities.customers', compact('customers'));
     }
+    public function homeIndex(){
+        return view('welcome');
+    }
 }

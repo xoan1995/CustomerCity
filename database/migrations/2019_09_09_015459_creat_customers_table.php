@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCustomersTable extends Migration
+class CreatCustomersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,8 +17,10 @@ class CreateCustomersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('dob');
+            $table->string('phone');
             $table->string('email');
             $table->unsignedBigInteger('city_id');
+            $table->
             $table->foreign('city_id')->references('id')->on('cities');
             $table->timestamps();
         });
@@ -31,6 +33,6 @@ class CreateCustomersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customers');
+        //
     }
 }

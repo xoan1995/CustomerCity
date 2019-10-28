@@ -1,48 +1,20 @@
 @extends('layouts.app')
-@section('list','danh sach cac khach hang')
+@section('title', 'hiển thị thông tin khách  hàng')
 @section('content')
-    <div class="col-12">
-        <div class="row">
-            <div class="col-12">
-                <h1>Danh sách khách hàng</h1>
-            </div>
-            <table class="table table-dark">
-                <thead>
-                <tr>
-                    <th scope="col">STT</th>
-                    <th scope="col">Tên khách hàng</th>
-                    <th scope="col">Ngày sinh</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">City</th>
-                </tr>
-                </thead>
-                @if(count($customers)==0)
-                    <tr>
-                        <td colspan="4">Không có dữ liệu</td>
-                    </tr>
-                @else
-                    @foreach($customers as $key => $customer)
-                        <tbody>
-                        <tr>
-                            <th scope="row">{{++$key}}</th>
-                            <td>{{$customer->name}}</td>
-                            <td>{{$customer->dob}}</td>
-                            <td>{{$customer->email}}</td>
-                            <td>{{$customer->city->name}}</td>
-                            <td></td>
-                            <td>
-                                <a href="{{route('customers.edit',$customer->id)}}">Sửa</a>
-                                <a href="{{route('customers.show',$customer->id)}}">Xem</a>
-                                <a href="{{route('customers.destroy', $customer->id)}}" class="text-danger" onclick="return confirm('Bạn chắc chắn muốn xóa?')">Xóa</a>
-                            </td>
-                        </tr>
-                        </tbody>
-                    @endforeach
-                @endif
-            </table>
-            <a class="btn btn-primary" href="{{route('customers.create')}}" class>Creat</a>
-
-        </div>
+    <div>
+        <h1>Thông tin khách hàng</h1>
+        <table class="table table-black">
+            <tr>
+                <th>Name customer:  {{$customer->name}}</th>
+            </tr>
+            <tr>
+                <td>Create Time:    {{$customer->created_at}}</td>
+            </tr>
+            <tr>
+                <td>Update Time:    {{$customer->updated_at}}</td>
+            </tr>
+        </table>
+        <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Return</button>
     </div>
-@endsection
 
+@endsection

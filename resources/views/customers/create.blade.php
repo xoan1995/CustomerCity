@@ -12,6 +12,10 @@
             <input type="email" class="form-control" name="email" placeholder="Enter email" required>
         </div>
         <div class="form-group">
+            <label>Phone</label>
+            <input type="number" class="form-control" name="phone" placeholder="Enter phone" required>
+        </div>
+        <div class="form-group">
             <label>Dob</label>
             <input type="date" class="form-control" name="dob" required>
         </div>
@@ -24,6 +28,5 @@
             </select>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-        <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Hủy</button>
     </form>
 @endsection
